@@ -1,0 +1,103 @@
+main{
+    margin-bottom:180px;
+}
+body{
+    background-image: url('../imgs/tile.jpg');
+    font-family: 'Dosis', sans-serif;
+    margin: auto 0;
+}
+
+h1{
+    text-align:center;
+}
+
+form{
+    background-image: url("../imgs/formbg.jpg");
+    padding: 17px 20px;    
+}
+
+label,input{
+    font-size:1.5em;
+}
+
+#date, #time, #textarea {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    font-size:1.5em;
+}
+
+p{
+    font-size:1.2em;
+    overflow-y: scroll;
+    max-height:170px;
+}
+
+.task{
+    background-image: url("../imgs/notebg.png");
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    min-height:310px;
+    word-wrap: break-word;
+    padding-right: 3em;
+    padding-left: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.fade {
+    opacity:1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+}
+    
+@keyframes fadeInOpacity {
+    0% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-moz-keyframes fadeInOpacity{
+    0% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@keyframes fadeInOpacity {
+   0% { opacity:0; }
+   100% { opacity:1; }
+}
+
+@-o-keyframes fadeInOpacity {
+   0% { opacity:0; }
+   100% { opacity:1; }
+}
+
+.note-footer{
+    bottom: 0px;
+    position:absolute;
+}
+
+.button-wrapper button {
+    visibility: hidden;
+
+}
+
+.button-wrapper:hover button {
+    visibility: visible;
+}
+
+#error-date, #error-todo, #error-time{
+    color:red;
+    font-size:1.3em;
+    font-weight:700;
+    text-transform: capitalize;
+    padding-top: 14px;
+}
+
+#footer-bg-color{
+    background-color: black;
+    color:white;
+    font-size:18px;
+    padding:15px;
+}

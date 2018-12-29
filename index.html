@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task Board</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Dosis" rel="stylesheet">
+
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <h1><img src="imgs/title.png" alt="title"> </h1>
+        <div class='container add-task'>
+            <div class='row'>
+                <div class='col-md-2'>
+                </div>
+                <div class='col-md-8'>
+                    <form novalidate id='form'>
+                        <div class="form-group">
+                            <label for="date">Date</label>
+                            <input type="date" class="form-control" id="date" placeholder="Enter date" required>
+                            <div id='error-date'></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Time</label>
+                            <input type="time" class="form-control" id="time" placeholder="Enter time">
+                            <div id='error-time'></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleTextarea">To-Do</label>
+                            <textarea class="form-control" id="textarea" placeholder="What do you need to do? Write your task here" required></textarea>
+                            <div id='error-todo'></div>
+                        </div>
+                        <button type="submit" class="btn btn-primary" id='btn-add-task'>Submit</button> </form>
+                </div>
+                <div class='col-md-2'>
+                </div>
+            </div>
+        </div>
+
+        <div class='container'>
+            <div class='row no-gutters' id='tasks'></div>
+        </div>
+    </main>
+
+    <footer class="py-5" id="footer-bg-color">
+        <div class="container">
+            <p class="m-0 text-center text-white">Shifra</p>
+        </div>
+    </footer>
+
+    <script src="code/main.js"></script>
+
+</body>
+
+</html>
